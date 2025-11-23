@@ -51,10 +51,6 @@ jobs:
           sudo mv duckdb /usr/local/bin/
           duckdb --version
       
-      - name: Update test script for Linux
-        run: |
-          sed -i 's|C:\\\\Users\\\\anup5\\\\tools\\\\duckdb.exe|/usr/local/bin/duckdb|g' scripts/run-tests.py
-      
       - name: Run tests
         run: |
           python scripts/run-tests.py test.duckdb tests/test-data.csv tests/test-queries.sql

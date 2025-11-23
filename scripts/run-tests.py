@@ -81,7 +81,12 @@ if __name__ == "__main__":
     test_queries_sql = sys.argv[3]
     
     # Path to DuckDB executable
-    duckdb_exe = r"C:\Users\anup5\tools\duckdb.exe"
+    # Auto-detect DuckDB path based on OS
+    import platform
+    if platform.system() == 'Windows':
+        duckdb_exe = r"C:\Users\anup5\tools\duckdb.exe"
+    else:  # Linux/Mac
+        duckdb_exe = "/usr/local/bin/duckdb"
     
     if not os.path.exists(duckdb_exe):
         print(f"❌ DuckDB not found at: {duckdb_exe}")
