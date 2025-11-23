@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,signup_date,country,total_purchases
+1,John,Doe,john.doe@email.com,2024-01-15,USA,1250.50
+2,Jane,Smith,jane.smith@email.com,2024-02-20,UK,890.25
+3,Bob,Johnson,bob.j@email.com,2024-03-10,Canada,2340.00
+4,Alice,Williams,alice.w@email.com,2024-04-05,USA,567.80
+5,Charlie,Brown,charlie.b@email.com,2024-05-12,Australia,1890.45
